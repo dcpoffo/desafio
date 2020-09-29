@@ -1,0 +1,17 @@
+<mat-card>
+    <mat-card-title>Novo Jogo/Placar</mat-card-title>
+    <form [formGroup]="form">
+        <div>
+            <mat-form-field appearance="outline">
+                <mat-label>Placar</mat-label>
+                <!-- <input required type="number" matInput [(ngModel)]="jogo.placar" [ngModelOptions]="{standalone: true}" /> -->
+                <input formControlName="placar" type="number" matInput [(ngModel)]="jogo.placar" />
+            </mat-form-field>
+        </div>
+
+    </form>
+    <button [disabled]="!form.valid" mat-raised-button (click)="cadastrarNovoJogo()" color="primary">Salvar
+</button>
+
+    <button mat-raised-button (click)="cancelar()">Cancelar</button>
+</mat-card>
