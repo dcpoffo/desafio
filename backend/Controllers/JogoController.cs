@@ -52,13 +52,14 @@ namespace backend.Controllers
           {    
                var retorno = await _repositorio.GetAllJogos();          
                var quantidadeJogadas = retorno.Length;
-               int placarMinimo = 0, placarMaximo = 0, recordMinimo = 0;
+               int placarMinimo = 0, placarMaximo = 0, recordMinimo = 0, recordMaximo = 0;
 
                foreach (var item in retorno)
                {
                     placarMinimo = item.PontuacaoMinimaTemporada;
                     placarMaximo = item.PontuacaoMaximaTemporada;
                     recordMinimo = item.QuantidadeRecordMinimoQuebrado;
+                    recordMaximo = item.QuantidadeRecordMaximoQuebrado;
                }
                
                try
@@ -72,6 +73,9 @@ namespace backend.Controllers
                     CalculoMaximoTemporadaServico calcumoMaximo = new CalculoMaximoTemporadaServico();
                     jogo.PontuacaoMaximaTemporada = calcumoMaximo.CalcularMaximoTemporada(jogo, quantidadeJogadas, placarMaximo);                    
                                         
+                    AtualizaQuebraRecordMaximoServico atualizaMaximo = new AtualizaQuebraRecordMaximoServico();
+                    jogo.QuantidadeRecordMaximoQuebrado = atualizaMaximo.AtualizaQuebraRecordMinimo(jogo, quantidadeJogadas, recordMaximo, placarMaximo);
+                    
                     _repositorio.Add(jogo);
                     if (await _repositorio.SaveChangesAsync())
                     {

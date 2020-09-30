@@ -13,7 +13,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 export class JogoCreateComponent implements OnInit {
 
   form = new FormGroup({
-    placar: new FormControl('', [Validators.required])
+    placar: new FormControl('', [Validators.required, Validators.max(999)])
   });
 
   jogo: Jogo = {
@@ -43,4 +43,7 @@ export class JogoCreateComponent implements OnInit {
     this.router.navigate(['/jogos']);
   }
 
+  public hasError = (controlName: string, errorName: string) =>{
+    return this.form.controls[controlName].hasError(errorName);
+  }
 }
