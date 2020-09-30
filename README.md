@@ -1,7 +1,7 @@
 ## Desafio Pública Tecnologia
 
 ### Problema
-Maria é jogadora de basquete e registra manualmente sua pontuação em uma tabela. Ela anota os pontos que fez e sempre mantém atualizado o mínimo e o máximo de pontos por partida, bem como quantas vezes quebrou o record mínimo e máximo de pontos marcados.
+Maria é jogadora de basquete e registra manualmente sua pontuação em uma tabela. Ela anota os pontos que fez e sempre mantém atualizado o mínimo e o máximo de pontos por partida, bem como quantas vezes quebrou o recorde mínimo e máximo de pontos marcados.
 
 ### Objetivo
 Desenvolver uma aplicação para facilitar o acompanhamento dos resultados dos jogos de Maria.
@@ -24,4 +24,4 @@ npm update
 npm start
 ```
 
-Se não apresentar nenhum erro, pode-se acessar a aplicação pelo navegador, através do endereço http://localhost:5000
+Se não apresentar nenhum erro, pode-se acessar a aplicação pelo navegador, através do endereço http://localhost:4200
