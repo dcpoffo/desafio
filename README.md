@@ -9,7 +9,7 @@ Desenvolver uma aplicação para facilitar o acompanhamento dos resultados dos j
 #### Rodando a aplicação no VSCode
 Para que a aplicação seja executada, deve-se abrir o terminal no VSCode e executar os seguintes comandos:
 (os passos a seguir, devem ser executados apenas na primeira vez ou somente quando necessário)
-- Passo 1: dentro de \backend: (executar somente uma vez, para a criação da base de dados)
+- Passo 1: dentro de \backend: (executar somente uma vez, para a criação da base de dados. Banco de dados utilizado: MySQL)
 ```
 dotnet ef database update
 ```
