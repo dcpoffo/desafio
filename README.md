@@ -6,20 +6,24 @@ Maria é jogadora de basquete e registra manualmente sua pontuação em uma tabe
 ### Objetivo
 Desenvolver uma aplicação para facilitar o acompanhamento dos resultados dos jogos de Maria.
 
-#### Rodando a aplicação
-Aplicação desenvolvida em Angular utilizando a IDE VSCode
- - Passo 1: dentro da pasta \backend
+#### Rodando a aplicação no VSCode
+Para que a aplicação seja executada, deve-se abrir o terminal no VSCode e executar os seguintes comandos:
+(os passos a seguir, devem ser executados apenas na primeira vez ou somente quando necessário)
+- Passo 1: dentro de \backend: (executar somente uma vez, para a criação da base de dados)
 ```
-dotnet watch run
+dotnet ef database update
 ```
-
-O próximo passo faz-se necessário somente caso necessite baixar/atualizar alguma dependencia do projeto. Antes da primeira vez que for rodar a aplicação, deve-se baixar todas as dependencias do projeto, executando o procedimento abaixo. Caso ja tenha feito esse passo, pode-se passar para o próximo
- - Passo 2: dentro da pasta \frontend
+- Passo 2: dentro de \frontend: 
+O próximo passo faz-se necessário somente caso necessite baixar/atualizar alguma dependencia do projeto. Antes da primeira vez que for rodar a aplicação, deve-se baixar todas as dependencias do projeto, executando o procedimento abaixo.
 ```
 npm update
 ```
-
-- Passo 3: dentro da pasta \frontend
+(os passos a seguir, devem ser executados após os passos anteriores)
+- Passo 3: dentro de \backend:
+```
+dotnet watch run
+```
+- Passo 4: dentro de \frontend:
 ```
 npm start
 ```
