@@ -31,21 +31,7 @@ namespace backend.Controllers
                {
                     return BadRequest($"Erro ao obter Tabela de Jogos: \n{ex.Message}");
                }
-          }
-
-          [HttpGet("{id}")]
-          public async Task<IActionResult> GetById(int id)
-          {
-               try
-               {
-                    var result = await _repositorio.GetJogoById(id);
-                    return Ok(result);
-               }
-               catch (Exception ex)
-               {
-                    return BadRequest($"Erro ao obter Jogo pelo Id: \n{ex.Message}");
-               }
-          }
+          }         
 
           [HttpPost]
           public async Task<IActionResult> Post(Jogo jogo)

@@ -9,7 +9,5 @@ namespace backend.data
           Task<bool> SaveChangesAsync();
 
           Task<Jogo[]> GetAllJogos();
-          Task<Jogo> GetJogoById(int id);
-
      }
 }

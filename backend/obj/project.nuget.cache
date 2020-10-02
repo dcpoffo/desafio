@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4HHmqiO/rY/7q5sp7FZVgaeaqnFjJHORMTvbDRZmDrimtvlr0a2nAfgQ9uaKqEeQxhDTYXdRnuvOJv+IA4f+UQ==",
+  "dgSpecHash": "dSqyqYzLeX23kjJn8LWxyBeGhjUh49ssmovD7hrUbj3wR+A0dTagkpFd63iLV5b4KXEIPJaAuzCXMWrIsxKBPw==",
   "success": true,
-  "projectFilePath": "D:\\SISTEMAS\\Angular\\desafio\\backend\\backend.csproj",
+  "projectFilePath": "D:\\SISTEMAS\\Angular\\desafioPublica\\backend\\backend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dcpof\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.8\\microsoft.aspnetcore.jsonpatch.3.1.8.nupkg.sha512",
     "C:\\Users\\dcpof\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.1.8\\microsoft.aspnetcore.mvc.newtonsoftjson.3.1.8.nupkg.sha512",

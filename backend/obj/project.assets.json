@@ -5546,11 +5546,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SISTEMAS\\Angular\\desafio\\backend\\backend.csproj",
+      "projectUniqueName": "D:\\SISTEMAS\\Angular\\desafioPublica\\backend\\backend.csproj",
       "projectName": "backend",
-      "projectPath": "D:\\SISTEMAS\\Angular\\desafio\\backend\\backend.csproj",
+      "projectPath": "D:\\SISTEMAS\\Angular\\desafioPublica\\backend\\backend.csproj",
       "packagesPath": "C:\\Users\\dcpof\\.nuget\\packages\\",
-      "outputPath": "D:\\SISTEMAS\\Angular\\desafio\\backend\\obj\\",
+      "outputPath": "D:\\SISTEMAS\\Angular\\desafioPublica\\backend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dcpof\\AppData\\Roaming\\NuGet\\NuGet.Config",

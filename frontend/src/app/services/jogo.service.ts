@@ -25,14 +25,6 @@ export class JogoService {
     );
   }
 
-  getById(id: number): Observable<Jogo> {
-    const url = `${this.baseURL}/${id}`;
-    return this.http.get<Jogo>(url).pipe(
-      map((obj) => obj),
-      catchError((e) => this.errorHandler(e))
-    );
-  }
-
   post(jogo: Jogo): Observable<Jogo> {
     return this.http.post<Jogo>(this.baseURL, jogo).pipe(
       map((obj) => obj),

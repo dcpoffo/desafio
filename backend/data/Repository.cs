@@ -29,15 +29,6 @@ namespace backend.data
                IQueryable<Jogo> query = _context.Jogo;
                query = query.AsNoTracking().OrderBy(a => a.Id);
                return await query.ToArrayAsync();
-          }
-
-          public async Task<Jogo> GetJogoById(int id)
-          {
-               IQueryable<Jogo> query = _context.Jogo;
-               query = query.AsNoTracking().OrderBy(a => a.Id)
-                                           .Where(a => a.Id == id);
-
-               return await query.FirstOrDefaultAsync();
-          }
+          }         
      }
 }
